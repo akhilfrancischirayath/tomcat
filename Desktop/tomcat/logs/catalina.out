@@ -1,0 +1,90 @@
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.91
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 13 2018 19:52:12 UTC
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.91.0
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_191/jre
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_191-b12
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /root/Desktop/g
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /root/Desktop/g
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/root/Desktop/g/conf/logging.properties
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/root/Desktop/g
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/root/Desktop/g
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/root/Desktop/g/temp
+Mar 06, 2019 9:32:22 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Mar 06, 2019 9:32:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mar 06, 2019 9:32:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2008 ms
+Mar 06, 2019 9:32:22 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 06, 2019 9:32:22 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.91
+Mar 06, 2019 9:32:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/Desktop/g/webapps/ROOT
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/Desktop/g/webapps/ROOT has finished in 584 ms
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/Desktop/g/webapps/docs
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/Desktop/g/webapps/docs has finished in 55 ms
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/Desktop/g/webapps/examples
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/Desktop/g/webapps/examples has finished in 291 ms
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/Desktop/g/webapps/host-manager
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/Desktop/g/webapps/host-manager has finished in 86 ms
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/Desktop/g/webapps/manager
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/Desktop/g/webapps/manager has finished in 64 ms
+Mar 06, 2019 9:32:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mar 06, 2019 9:32:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mar 06, 2019 9:32:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1151 ms
+Mar 06, 2019 9:34:05 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Mar 06, 2019 9:34:05 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Mar 06, 2019 9:34:05 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
