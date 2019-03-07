@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=server
+Comment=Starts the VirtualBox machine server
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBoxVM --comment "server" --startvm "{578bc670-b828-480d-9c2b-c46d8a0a7945}"
+Icon=virtualbox-vbox.png

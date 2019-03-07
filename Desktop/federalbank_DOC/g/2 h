@@ -1,0 +1,161 @@
+[root@localhost ~]# history
+    1  vim /etc/yum.repos.d/new.repo 
+    2  yum repolist
+    3  yum install ssh
+    4  yum install httpd
+    5  yum clean all
+    6  yum clear all
+    7  clean
+    8  clear
+    9  cd
+   10  yum install atom
+   11  cd /etc/yum.repos.d/
+   12  ll
+   13  vim new.repo
+   14  cd
+   15  lsblk
+   16  yum repolist
+   17  mount | grep iso9660
+   18  cd /media/
+   19  ls
+   20  cd
+   21  cd /home/
+   22  ls
+   23  cd
+   24  cd /media/
+   25  cd
+   26  cp /home/Packages /media
+   27  cp Packages /media
+   28  vim /etc/yum.repos.d/new.repo 
+   29  yum clean all
+   30  yum repolist
+   31  ls -ltr Packages/
+   32  cd Packages/
+   33  ls -ltr
+   34  createrepo .
+   35  Tclear
+   36  clean
+   37  clear
+   38  cd
+   39  systemctl status postgres
+   40  systemctl status postgresql.service 
+   41  systemctl restart postgresql.service 
+   42  journalctl -xe
+   43  service postgresql status
+   44  service postgresql start
+   45  postgresql-setup initdb
+   46  service postgresql status
+   47  psql -U postgres
+   48  systemctl start postgres
+   49  systemctl status postgresql.service 
+   50  systemctl start postgresql.service 
+   51  systemctl status postgresql.service 
+   52  su - postgres
+   53  yum install postgresql postgresql-server
+   54  start postgresql
+   55  start postgresql:
+   56  chkconfig postgresql on
+   57  service postgresql start 
+   58  systemctl status postgresql.service
+   59  systemctl enable postgresql.service
+   60  systemctl start postgresql.service
+   61  journalctl -xe
+   62  systemctl status postgresql.service
+   63  tail -f /var/log/messages 
+   64  rpm -qa | grep postgres
+   65  systemctl status postgresql.service 
+   66  journalctl -xe
+   67  tail -f /var/log/messages 
+   68  ls -ltr
+   69  mkdir newipos
+   70  mv sunflower_prerequisites_installtion-latest.zip jdk-8u191-linux-x64.tar.gz apache-tomcat-7.0.79.zip newipos
+   71  ls -ltr
+   72  cd newipos/
+   73  ls -ltr
+   74  ip a s
+   75  cd
+   76  ip a s
+   77  ls -ltr
+   78  cd newipos/
+   79  ls -ltr
+   80  cd sunflower_prerequisites_installtion/
+   81  ls -ltr
+   82  cd redis-4.0.9/
+   83  ls -ltr
+   84  cp redis_init_script /etc/init.d/redis_6379
+   85  cd utils/
+   86  cp redis_init_script /etc/init.d/redis_6379
+   87  ls -ltr /etc/init.d/redis_6379
+   88  vim /etc/init.d/redis_6379
+   89  ls
+   90  cd ..
+   91  ls -ltr
+   92  cp redis.conf /etc/redis/
+   93  vim /etc/redis/redis.conf 
+   94  /etc/init.d/redis_6379 start
+   95  /etc/init.d/redis_6379 status
+   96  ls -l /etc/redis/redis.conf 
+   97  vim /etc/redis/redis.conf
+   98  vim /etc/redis/redis.conf 
+   99  /etc/init.d/redis_6379 start
+  100  /etc/init.d/redis_6379 statys
+  101  /etc/init.d/redis_6379 status
+  102  vim /var/log/messages 
+  103  systemctl status firewalld.service 
+  104  systemctl stop firewalld.service 
+  105  getenforce 
+  106  setenforce 0
+  107  /etc/init.d/redis_6379 status
+  108  /etc/init.d/redis_6379 start
+  109  cd
+  110  systemctl status postgresql.service 
+  111  postgres
+  112  su - postgres
+  113  vim /etc/sysconfig/iptables
+  114  vim /etc/sysconfig/iptables-config 
+  115  man firewalld
+  116  man firewalld cmd
+  117  clear
+  118  vim /etc/sysconfig/network-scripts/ifcfg-enp1s0 
+  119  systemctl restart network
+  120  systemctl restart NetworkManager
+  121  ip a s
+  122  cd 
+  123  ls -ltr
+  124  cd newipos/
+  125  ls -ltr
+  126  unzip sunflower_prerequisites_installtion-latest.zip 
+  127  cd sunflower_prerequisites_installtion/
+  128  ls -ltr
+  129  gcc -v
+  130  ./install_rabbitmq.sh 
+  131  node -v
+  132  npm -v
+  133  rabbitmq-server 
+  134  nohup rabbitmq-server &
+  135  ls -ltr
+  136  cd
+  137  ls -ltr
+  138  cat redis_setup 
+  139  mkdir /var/redis
+  140  mkdir /etc/redis
+  141  ls
+  142  cd
+  143  ls -ltr
+  144  ls g
+  145  reboot
+  146  ping 8.8.8.8
+  147  ping -I 8.8.8.8
+  148  ifconfig 
+  149  getenforce 
+  150  ls -ltr
+  151  vim /etc/selinux/config 
+  152  systemctl status firewalld.service 
+  153  systemctl sop firewalld.service 
+  154  systemctl stop firewalld.service 
+  155  systemctl status firewalld.service 
+  156  systemctl disable firewalld.service 
+  157  setenforce 0
+  158  reboot
+  159  history
+

@@ -1,0 +1,36 @@
+https://redis.io/topics/quickstart
+Installing Redis more properly
+
+
+
+
+mkdir /var/redis
+
+mkdir /etc/redis
+cd redis-4.0.9-setup-file
+cd utils/
+ls
+cp redis_init_script /etc/init.d/redis_6379
+cd /etc/init.d/
+vim redis_6379 
+ls
+cd -
+ls
+cd ../
+ls
+cp redis.conf /etc/redis/6379.conf
+cd /etc/redis/
+ls
+mkdir /var/redis/6379
+cd /etc/redis/
+ls
+vim 6379.conf 
+ vim /etc/init.d/redis_6379
+# chkconfig: - 99 10 (add after 1st line)
+chkconfig --add /etc/init.d/redis_6379
+/etc/init.d/redis_6379 start
+redis-cli 
+cd /var/log/ 
+vim redis_6379.log 
+tailf redis_6379.log 
+

@@ -1,0 +1,276 @@
+[root@localhost redis-4.0.9]# history
+    1  vim /etc/yum.repos.d/new.repo 
+    2  yum repolist
+    3  yum install ssh
+    4  yum install httpd
+    5  yum clean all
+    6  yum clear all
+    7  clean
+    8  clear
+    9  cd
+   10  yum install atom
+   11  cd /etc/yum.repos.d/
+   12  ll
+   13  vim new.repo
+   14  cd
+   15  lsblk
+   16  yum repolist
+   17  mount | grep iso9660
+   18  cd /media/
+   19  ls
+   20  cd
+   21  cd /home/
+   22  ls
+   23  cd
+   24  cd /media/
+   25  cd
+   26  cp /home/Packages /media
+   27  cp Packages /media
+   28  vim /etc/yum.repos.d/new.repo 
+   29  yum clean all
+   30  yum repolist
+   31  ls -ltr Packages/
+   32  cd Packages/
+   33  ls -ltr
+   34  createrepo .
+   35  Tclear
+   36  clean
+   37  clear
+   38  cd
+   39  systemctl status postgres
+   40  systemctl status postgresql.service 
+   41  systemctl restart postgresql.service 
+   42  journalctl -xe
+   43  service postgresql status
+   44  service postgresql start
+   45  postgresql-setup initdb
+   46  service postgresql status
+   47  psql -U postgres
+   48  systemctl start postgres
+   49  systemctl status postgresql.service 
+   50  systemctl start postgresql.service 
+   51  systemctl status postgresql.service 
+   52  su - postgres
+   53  yum install postgresql postgresql-server
+   54  start postgresql
+   55  start postgresql:
+   56  chkconfig postgresql on
+   57  service postgresql start 
+   58  systemctl status postgresql.service
+   59  systemctl enable postgresql.service
+   60  systemctl start postgresql.service
+   61  journalctl -xe
+   62  systemctl status postgresql.service
+   63  tail -f /var/log/messages 
+   64  rpm -qa | grep postgres
+   65  systemctl status postgresql.service 
+   66  journalctl -xe
+   67  tail -f /var/log/messages 
+   68  ls -ltr
+   69  mkdir newipos
+   70  mv sunflower_prerequisites_installtion-latest.zip jdk-8u191-linux-x64.tar.gz apache-tomcat-7.0.79.zip newipos
+   71  ls -ltr
+   72  cd newipos/
+   73  ls -ltr
+   74  ip a s
+   75  cd
+   76  ip a s
+   77  ls -ltr
+   78  cd newipos/
+   79  ls -ltr
+   80  cd sunflower_prerequisites_installtion/
+   81  ls -ltr
+   82  cd redis-4.0.9/
+   83  ls -ltr
+   84  cp redis_init_script /etc/init.d/redis_6379
+   85  cd utils/
+   86  cp redis_init_script /etc/init.d/redis_6379
+   87  ls -ltr /etc/init.d/redis_6379
+   88  vim /etc/init.d/redis_6379
+   89  ls
+   90  cd ..
+   91  ls -ltr
+   92  cp redis.conf /etc/redis/
+   93  vim /etc/redis/redis.conf 
+   94  /etc/init.d/redis_6379 start
+   95  /etc/init.d/redis_6379 status
+   96  ls -l /etc/redis/redis.conf 
+   97  vim /etc/redis/redis.conf
+   98  vim /etc/redis/redis.conf 
+   99  /etc/init.d/redis_6379 start
+  100  /etc/init.d/redis_6379 statys
+  101  /etc/init.d/redis_6379 status
+  102  vim /var/log/messages 
+  103  systemctl status firewalld.service 
+  104  systemctl stop firewalld.service 
+  105  getenforce 
+  106  setenforce 0
+  107  /etc/init.d/redis_6379 status
+  108  /etc/init.d/redis_6379 start
+  109  cd
+  110  systemctl status postgresql.service 
+  111  postgres
+  112  su - postgres
+  113  vim /etc/sysconfig/iptables
+  114  vim /etc/sysconfig/iptables-config 
+  115  man firewalld
+  116  man firewalld cmd
+  117  clear
+  118  vim /etc/sysconfig/network-scripts/ifcfg-enp1s0 
+  119  systemctl restart network
+  120  systemctl restart NetworkManager
+  121  ip a s
+  122  cd 
+  123  ls -ltr
+  124  cd newipos/
+  125  ls -ltr
+  126  unzip sunflower_prerequisites_installtion-latest.zip 
+  127  cd sunflower_prerequisites_installtion/
+  128  ls -ltr
+  129  gcc -v
+  130  ./install_rabbitmq.sh 
+  131  node -v
+  132  npm -v
+  133  rabbitmq-server 
+  134  nohup rabbitmq-server &
+  135  ls -ltr
+  136  cd
+  137  ls -ltr
+  138  cat redis_setup 
+  139  mkdir /var/redis
+  140  mkdir /etc/redis
+  141  ls
+  142  cd
+  143  ls -ltr
+  144  ls g
+  145  reboot
+  146  ping 8.8.8.8
+  147  ping -I 8.8.8.8
+  148  ifconfig 
+  149  getenforce 
+  150  ls -ltr
+  151  vim /etc/selinux/config 
+  152  systemctl status firewalld.service 
+  153  systemctl sop firewalld.service 
+  154  systemctl stop firewalld.service 
+  155  systemctl status firewalld.service 
+  156  systemctl disable firewalld.service 
+  157  setenforce 0
+  158  reboot
+  159  getenforce 
+  160  systemctl status firewalld.service 
+  161  /etc/init.d/redis_6379 status
+  162  /etc/init.d/redis_6379 start
+  163  vim /etc/redis/6379.conf
+  164  ls -ltr
+  165  cd newipos/
+  166  ls
+  167  cd sunflower_prerequisites_installtion/redis-4.0.9/
+  168  ls -ltr
+  169  cp redis.conf /etc/redis/6379.conf 
+  170  vim /etc/redis/6379.conf
+  171  /etc/init.d/redis_6379 start
+  172  ps -ef | grep redis
+  173  ps -ef | grep redis -i
+  174  /etc/init.d/redis_6379 status
+  175  redis-cli 
+  176  /etc/init.d/redis_6379 start
+  177  /etc/init.d/redis_6379 status
+  178  redis-cli 
+  179  cd
+  180  cd /etc/alternatives/
+  181  ls -l java
+  182  ls -l javac
+  183  ls -l keytool
+  184  rm -rf java keytool
+  185  ls -l javac
+  186  ls -l java
+  187  cd
+  188  ls -ltr
+  189  mkdir /usr/java
+  190  mv jdk-8u191-linux-x64.tar.gz /usr/java
+  191  cd /usr/java
+  192  ls -ltr
+  193  tar -xzvf jdk-8u191-linux-x64.tar.gz 
+  194  ls -ltr
+  195  cd /etc/alternatives/
+  196  ln -s /usr/java/jdk1.8.0_191/bin/java .
+  197  ln -s /usr/java/jdk1.8.0_191/bin/javac .
+  198  ln -s /usr/java/jdk1.8.0_191/bin/keytool .
+  199  java -version
+  200  cd
+  201  ls -ltr
+  202  cd newipos/
+  203  ls -ltr
+  204  unzip apache-tomcat-7.0.79.zip 
+  205  cd apache-tomcat-7.0.79/
+  206  ls -ltr
+  207  cd bin/
+  208  ls -ltr
+
+  209  chmod  u+x *.sh
+
+  210  ls -ltr
+  211  cd ../conf/
+  212  ls -ltr
+  213  vim server.xml 
+  214  vim context.xml 
+  215  cd
+  216  gcc -v
+  217  ls -ltr
+  218  cd newipos/
+  219  ls -ltr
+  220  cd sunflower_prerequisites_installtion/
+  221  ls
+  222  vim install_rabbitmq.sh 
+  223  cd ..
+  224  cd
+  225  ls -l /var/redis/
+  226  redis-cli 
+  227  /etc/init.d/redis_6379 start
+  228  /etc/init.d/redis_6379 status
+  229  ps -ef | grep -i redis
+  230  tail -f /var/log/messages 
+  231  redis-server 
+  232  vim /etc/init.d/redis_6379 
+  233  cat /etc/init.d/redis_6379 | grep redis
+  234  ls -l /etc/redis/6379.conf 
+  235  vim /etc/init.d/redis_6379 
+  236  rm -rf /etc/redis/redis.conf 
+  237  vim /etc/redis/6379.conf 
+  238  /etc/init.d/redis_6379 start
+  239  /etc/init.d/redis_6379 status
+  240  ps -ef | grep -i redis
+  241  /etc/init.d/redis_6379 start
+  242  redis-cli 
+  243  netstat -tulpn 
+  244  rpm -qa | grep tcl
+  245  ls -ltr
+  246  cd newipos/
+  247  ls -ltr
+  248  cd sunflower_prerequisites_installtion/
+  249  ls -ltr
+  250  cd redis-4.0.9/
+  251  ls -ltr
+  252  cd ..
+  253  vim install_rabbitmq.sh 
+  254  ls
+  255  cd redis-4.0.9/
+  256  ls -ltr
+  257  cd utils/
+  258  ls -ltr
+  259  cp redis_init_script /etc/init.d/redis_6379 
+  260  vim /etc/init.d/redis_6379
+  261  cd ..
+  262  ls
+  263  cp redis.conf /etc/redis/6379.conf
+  264  mkdir /var/redis/6379
+  265  vim /etc/redis/6379.conf 
+  266  /etc/init.d/redis_6379 start
+  267  ps -ef | grep -i redis
+  268  redis-cli 
+  269  netstat -tulpn | grep 6379
+  270  redis-cli 
+  271  ls -l /var/redis/6379/
+  272  history
+

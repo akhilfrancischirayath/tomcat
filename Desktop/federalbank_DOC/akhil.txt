@@ -1,0 +1,216 @@
+
+  931  ll
+  932  cd /Test_Servers/Bank/UBI_FI/iPOS/Release/
+  933  ll
+  934  cd /Test_Servers/Bank/PGB/iPOS/Release/
+  935  ll
+  936  ./iPOS_Server_9.8.9.5_64 -d
+  937  cd -
+  938  ll
+  939  ./iPOS_Server_9.8.9.5_64 -d
+  940  netstat -tlupn|grep 8006
+  941  cd ../server_config
+  942  vi FI_Config.ini
+  943  ./AddCRC_RMS FI_Config.ini
+  944  sync
+  945  cd -
+  946  ll
+  947  ./iPOS_Server_9.8.9.5_64 -d
+  948  cd /Test_Servers/SUNFLOWER/
+  949  ll
+  950  cd IPAY_THERM
+  951  netstat -tlupn|grep
+  952  netstat -tlupn
+  953  pm2 list
+  954  pm2 delete AppConfigProvider_ORACLE AppConfigProvider_kavana logConsumer-iPay dbConsumer-iPay_ORACLE mSessionConsumer-iPay_ORACLE mSessionConsumer-iPay  mTimedout-iPay mTimedout-iPay_ORACLE sunflower
+  955  pm2 delete dbConsumer-iPay logConsumer-iPay_ORACLE
+  956  ll
+  957  cd BackendService
+  958  ll
+  959  netstat -tlupn
+  960  ll
+  961  cd BS-SiliconV7.0.0/
+  962  ll
+  963  cd AppConfigProvider/
+  964  ll
+  965  node AppConfigProvider_kavana.js
+  966  export APP_CONFIG_SERVICE=http://127.0.0.1:20005
+  967  node AppConfigProvider_kavana.js
+  968  pm2 start AppConfigProvider_kavana.js
+  969  ll
+  970  cd ../../..
+  971  ll
+  972  cd IPAY/
+  973  ll
+  974  cd iPAY-j-ThemistoV6.1.2
+  975  ll
+  976  node sunflower.js 0.0.0.0 8007
+  977  pm2 start sunflower.js -- 0.0.0.0 8007
+  978  cd ../..
+  979  ll
+  980  cd BackgroundTask/BT-SiliconV7.0.0/IPAY/
+  981  ll
+  982  pm2 start backgroundtask.config.js
+  983  ll
+  984  cd ServerLogMQ/LOGS/2019/02/
+  985  ll
+  986  tailf 13.Wed.log
+  987  cd /Test_Servers/ipay_oracle/
+  988  ll
+  989  cd apache-tomcat-7.0.64_bkp
+  990  ll
+  991  cd logs
+  992  ll
+  993  taif catalina.out
+  994  tailf catalina.out
+  995  cd /Test_Servers/ipay_oracle/apache-tomcat-7.0.64_bkp/logs/
+  996  tailf catalina.out
+  997  cd /Test_Servers/apache-tomcat-7.0.64
+  998  cd logs/
+  999  tailf catalina.out
+ 1000  cd /Test_Servers/SUNFLOWER/IPAY_THERM/BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1001  ll 
+ 1002  node AppConfigProvider_kavana.js
+ 1003  export  APP_CONFIG_SERVICE=http://127.0.0.1://15300/
+ 1004  node AppConfigProvider_kavana.js
+ 1005  pm2 start  AppConfigProvider_kavana.js
+ 1006  pm2 list
+ 1007  cd ../../../
+ 1008  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1009  node sunflower.js 10.10.10.176 8003
+ 1010  cd ../../../
+ 1011  cd IPAY_THERM/
+ 1012  cd BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1013  ll
+ 1014  node AppConfigProvider_kavana.js
+ 1015  echo $APP_CONFIG_SERVICE
+ 1016  export  APP_CONFIG_SERVICE=http://127.0.0.1:15300/
+ 1017  node AppConfigProvider_kavana.js
+ 1018  pm2 start AppConfigProvider_kavana.js
+ 1019  cd ../../../
+ 1020  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1021  node sunflower.js 10.10.10.176 8003
+ 1022  echo $APP_CONFIG_SERVICE
+ 1023  pm2 list
+ 1024  cd ../../../
+ 1025  pm2 delete AppConfigProvider_kavana
+ 1026  cd IPAY_THERM/BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1027  ll
+ 1028  node AppConfigProvider_kavana.js
+ 1029  export APP_CONFIG_SERVICE=grpc://127.0.0.1:68000/
+ 1030  node AppConfigProvider_kavana.js
+ 1031  pm2 start AppConfigProvider_kavana.js
+ 1032  pm2 logs 37
+ 1033  export APP_CONFIG_SERVICE=grpc://127.0.0.1:6800/
+ 1034  node AppConfigProvider_kavana.js
+ 1035  pm2 restart AppConfigProvider_kavana
+ 1036  pm2 logs 37
+ 1037  pm2 version
+ 1038  pm2 -version
+ 1039  ls
+ 1040  pm2 delete 37
+ 1041  export APP_CONFIG_SERVICE=grpc://127.0.0.1:7800/
+ 1042  node AppConfigProvider_kavana.js
+ 1043  pm2 start AppConfigProvider_kavana.js
+ 1044  pm2 logs
+ 1045  pm2 logs 38
+ 1046  cd ../../../
+ 1047  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1048  node sunflower.js 10.10.10.176 32000
+ 1049  pm2 start sunflower.js 10.10.l0.176 32000
+ 1050  pm2 list
+ 1051  pm2 logs sunflower
+ 1052  history
+ 1053    961  cd BS-SiliconV7.0.0/
+ 1054    962  ll
+ 1055    963  cd AppConfigProvider/
+ 1056    964  ll
+ 1057    965  node AppConfigProvider_kavana.js
+ 1058    966  export APP_CONFIG_SERVICE=http://127.0.0.1:20005
+ 1059    967  node AppConfigProvider_kavana.js
+ 1060    968  pm2 start AppConfigProvider_kavana.js
+ 1061    969  ll
+ 1062    970  cd ../../..
+ 1063    971  ll
+ 1064    972  cd IPAY/
+ 1065    973  ll
+ 1066    974  cd iPAY-j-ThemistoV6.1.2
+ 1067    975  ll
+ 1068    976  node sunflower.js 0.0.0.0 8007
+ 1069    977  pm2 start sunflower.js -- 0.0.0.0 8007
+ 1070    978  cd ../..
+ 1071    979  ll
+ 1072    980  cd BackgroundTask/BT-SiliconV7.0.0/IPAY/
+ 1073    981  ll
+ 1074    982  pm2 start backgroundtask.config.js
+ 1075    983  ll
+ 1076    984  cd ServerLogMQ/LOGS/2019/02/
+ 1077    985  ll
+ 1078    986  tailf 13.Wed.log
+ 1079    987  cd /Test_Servers/ipay_oracle/
+ 1080    988  ll
+ 1081    989  cd apache-tomcat-7.0.64_bkp
+ 1082    990  ll
+ 1083    991  cd logs
+ 1084    992  ll
+ 1085    993  taif catalina.out
+ 1086    994  tailf catalina.out
+ 1087    995  cd /Test_Servers/ipay_oracle/apache-tomcat-7.0.64_bkp/logs/
+ 1088    996  tailf catalina.out
+ 1089    997  cd /Test_Servers/apache-tomcat-7.0.64
+ 1090    998  cd logs/
+ 1091    999  tailf catalina.out
+ 1092   1000  cd /Test_Servers/SUNFLOWER/IPAY_THERM/BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1093   1001  ll
+ 1094   1002  node AppConfigProvider_kavana.js
+ 1095   1003  export  APP_CONFIG_SERVICE=http://127.0.0.1://15300/
+ 1096   1004  node AppConfigProvider_kavana.js
+ 1097   1005  pm2 start  AppConfigProvider_kavana.js
+ 1098   1006  pm2 list
+ 1099   1007  cd ../../../
+ 1100   1008  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1101   1009  node sunflower.js 10.10.10.176 8003
+ 1102   1010  cd ../../../
+ 1103   1011  cd IPAY_THERM/
+ 1104   1012  cd BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1105   1013  ll
+ 1106   1014  node AppConfigProvider_kavana.js
+ 1107   1015  echo $APP_CONFIG_SERVICE
+ 1108   1016  export  APP_CONFIG_SERVICE=http://127.0.0.1:15300/
+ 1109   1017  node AppConfigProvider_kavana.js
+ 1110   1018  pm2 start AppConfigProvider_kavana.js
+ 1111   1019  cd ../../../
+ 1112   1020  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1113   1021  node sunflower.js 10.10.10.176 8003
+ 1114   1022  echo $APP_CONFIG_SERVICE
+ 1115   1023  pm2 list
+ 1116   1024  cd ../../../
+ 1117   1025  pm2 delete AppConfigProvider_kavana
+ 1118   1026  cd IPAY_THERM/BackendService/BS-SiliconV7.0.0/AppConfigProvider/
+ 1119   1027  ll
+ 1120   1028  node AppConfigProvider_kavana.js
+ 1121   1029  export APP_CONFIG_SERVICE=grpc://127.0.0.1:68000/
+ 1122   1030  node AppConfigProvider_kavana.js
+ 1123   1031  pm2 start AppConfigProvider_kavana.js
+ 1124   1032  pm2 logs 37
+ 1125   1033  export APP_CONFIG_SERVICE=grpc://127.0.0.1:6800/
+ 1126   1034  node AppConfigProvider_kavana.js
+ 1127   1035  pm2 restart AppConfigProvider_kavana
+ 1128   1036  pm2 logs 37
+ 1129   1037  pm2 version
+ 1130   1038  pm2 -version
+ 1131   1039  ls
+ 1132   1040  pm2 delete 37
+ 1133   1041  export APP_CONFIG_SERVICE=grpc://127.0.0.1:7800/
+ 1134   1042  node AppConfigProvider_kavana.js
+ 1135   1043  pm2 start AppConfigProvider_kavana.js
+ 1136   1044  pm2 logs
+ 1137   1045  pm2 logs 38
+ 1138   1046  cd ../../../
+ 1139   1047  cd IPAY/iPAY-j-ThemistoV6.1.2
+ 1140   1048  node sunflower.js 10.10.10.176 32000
+ 1141   1049  pm2 start sunflower.js 10.10.l0.176 32000
+ 1142   1050  pm2 list
+ 1143   1051  pm2 logs sunflower
+ 1144   1052  history
+ 1145  [tester@test-server iPAY-j-ThemistoV6.1.2]$

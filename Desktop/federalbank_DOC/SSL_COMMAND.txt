@@ -1,0 +1,37 @@
+openssl pkcs12 -in <name of file>.pfx -nocerts -out VIJBAN-EKYC-PrivKey.pem
+
+openssl pkcs12 -in <name of file>.pfx -clcerts -nokeys -out VIJBAN-EKYC-PublicCert.pem
+
+openssl rsa -in VIJBAN-EKYC-PrivKey.pem -out VIJBAN-EKYC-PrivateKey.pem
+
+openssl pkcs8 -topk8 -nocrypt -in VIJBAN-EKYC-PrivateKey.pem -out VIJBAN-EKYC-PrivateKey_pcks8.pem
+
+
+
+=========================
+openssl pkcs12 -in key.p12 -out key.pem -nodes
+
+openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+
+================================encrypt and decrypt files by using public/privatekey=======================
+
+openssl smime -encrypt -binary -aes-256-cbc -in file.txt -out encrypted.zip.enc CBI-EKYC-PublicCert.cer
+
+openssl smime -decrypt -binary -in encrypted.zip.enc  -out decrypted.txt -inkey CBI-EKYC-PrivateKey_pcks8.pem
+
+
+==============================
+If you have a PEM encoded key:
+
+1. openssl pkeyutl -encrypt -in FileToEncrypt -out EncryptedData.enc -inkey ThePathToYourPublicKey -keyform PEM
+
+If you have a DER encoded key:
+2. openssl pkeyutl -encrypt -in FileToEncrypt -out EncryptedData.enc -inkey ThePathToYourPublicKey -keyform DER
+
+3.You then decrypt with:
+
+openssl pkeyutl -decrypt -in EncryptedData.enc -out DecryptedFile -inkey ThePathToYourPrivateKey
+
+============CAS=================
+
+openssl pkcs12 -in cas.p12 -out cas_sahu.cer
