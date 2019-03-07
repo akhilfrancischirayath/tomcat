@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=client
-Comment=Starts the VirtualBox machine client
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBoxVM --comment "client" --startvm "{2e557ae9-7898-4aa6-abb3-2e094163fdbb}"
-Icon=virtualbox-vbox.png
